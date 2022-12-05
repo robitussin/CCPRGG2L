@@ -1,7 +1,7 @@
 # CCPRGG2L
 Intermediate Programming
 
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
+| Folder Name | Topic 
+| week_1   | Refresher on conditions and loops    
+| week_2   | Refresher on arrays  
+| week_3   | Exception Handling and File Handling  
