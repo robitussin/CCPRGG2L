@@ -32,7 +32,7 @@ public class App {
         }
 
         // Even shorter method
-        match = Pattern.matches("\\d{4}-\\d{6}", "studentNum");
+        match = Pattern.matches("\\d{4}-\\d{6}", studentNum);
 
         if (match) {
             System.out.println("valid student number");
