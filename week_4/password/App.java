@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
 
+        // At least one letter
+        // At least one number
+        // At least 8 chars
+        
         // Java program to check if a password is valid
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter password: ");
