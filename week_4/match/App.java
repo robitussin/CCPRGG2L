@@ -23,7 +23,7 @@ public class App {
         }
 
         // Short method
-        match = Pattern.compile("\\d+").matcher(studentNum).matches();
+        match = Pattern.compile("\\d{4}-\\d{6}").matcher(studentNum).matches();
 
         if (match) {
             System.out.println("valid student number");
@@ -32,7 +32,7 @@ public class App {
         }
 
         // Even shorter method
-        match = Pattern.matches("\\d+", "studentNum");
+        match = Pattern.matches("\\d{4}-\\d{6}", studentNum);
 
         if (match) {
             System.out.println("valid student number");

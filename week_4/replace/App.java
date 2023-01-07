@@ -3,7 +3,7 @@ public class App {
 
         String myString = "I love Java!";
 
-        String replaceString = myString.replaceAll("a", "o");// replaces all occurrences of "a" to "e"
+        String replaceString = myString.replaceAll("a", "o");// replaces all occurrences of "a" to "o"
 
         System.out.println(replaceString);
     }
