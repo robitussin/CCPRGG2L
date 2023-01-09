@@ -11,4 +11,5 @@ https://www.notion.so/CCPRGG2L-b05c7e26ee29424eb468884af3cf51b8
 | week_2   | Refresher on arrays |
 | week_3   | Exception Handling and File Handling  |
 | week_4   | Regular Expressions  |
-| week_5   | Classes and Methods, Objects and Composition  |
+| week_5   | Recursion |
+| week_6   | Classes and Methods, Objects and Composition  |
