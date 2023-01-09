@@ -8,13 +8,13 @@ public class App {
         // At least one letter
         // At least one number
         // At least 8 chars
-        
+
         // Java program to check if a password is valid
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter password: ");
         String password = scan.nextLine();
 
-        Pattern pattern = Pattern.compile("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$");
+        Pattern pattern = Pattern.compile("^(?=.*[A-Za-z])(?=.*\\d).{8,}$");
         Matcher matcher = pattern.matcher(password);
 
         boolean match = matcher.matches();
