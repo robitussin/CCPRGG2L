@@ -15,7 +15,7 @@ public class exercise1 {
 
         // Rules
         // - It should always begin with www.
-        // - It should always begin with .com
+        // - It should always end with .com
 
         String website = scan.nextLine();
 
