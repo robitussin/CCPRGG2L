@@ -1,20 +1,20 @@
 final class Car {
 
     // Composition
-    private final Engine engine;
+    private final Engine carEngine;
 
     // Constructor
-    Car(Engine engine) {
+    Car(Engine engineType) {
 
         // This keywords refers to same instance
-        this.engine = engine;
+        this.carEngine = engineType;
     }
 
     // Method
     public void start() {
 
-        if (engine != null) {
-            engine.start();
+        if (carEngine != null) {
+            carEngine.start();
             System.out.println("Car is moving ");
         }
     }
