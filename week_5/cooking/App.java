@@ -1,55 +1,47 @@
 import java.util.Scanner;
 
 public class App {
-
     static Scanner scan = new Scanner(System.in);
 
-    public static void main(String[] args) throws Exception {
+public static void main(String[] args) throws Exception {
 
-        cook("Tinola");
-        scan.close();
+    passExam();
+    scan.close();
+}
+
+static void passExam() {
+
+    System.out.println("Taking exam!");
+    study();
+
+    String feedback = getFeedBack();
+
+    // Define the base case / stopping condition
+    if (feedback.equals("no")) {
+
+        // Do something to reach the goal
+        study();
+
+        // Recursive call
+        passExam();
+    } else if (feedback.equals("yes")) {
+        celebrate();
     }
+}
 
-    static void cook(String food) {
+static void study() {
+    System.out.println("Studying for the exam");
+}
 
-        System.out.println("Cooking!");
-        taste(food);
+static String getFeedBack() {
+    System.out.println("Are you ready for the exam? (Enter \"yes\" or \"no\")");
 
-        String feedback = getFeedBack(food);
+    String feedback = scan.next();
 
-        // Define the base case / stopping condition
-        if (feedback.equals("no")) {
+    return feedback;
+}
 
-            // Do something to reach the goal
-            fixRecipe(food);
-
-            // Recursive call
-            cook(food);
-        } else if (feedback.equals("yes")) {
-            serve(food);
-        }
-    }
-
-    static void taste(String food) {
-        System.out.println("Tasting food");
-    }
-
-    static String getFeedBack(String food) {
-        System.out.println("Is the " + food + " delicious? (Enter \"yes\" or \"no\")");
-
-        String feedback = scan.next();
-
-        return feedback;
-    }
-
-    static void fixRecipe(String food) {
-        System.out.print("Enter additional ingredient:");
-        String ingredient = scan.next();
-        System.out.println("Fixing recipe. Added " + ingredient);
-    }
-
-    static void serve(String food) {
-        System.out.println("Serving " + food);
-    }
-
+static void celebrate() {
+    System.out.println("Passed the exam. Celebrating!");
+}
 }
