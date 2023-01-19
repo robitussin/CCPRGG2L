@@ -25,9 +25,9 @@ public class App {
 
         currentWeight = checkWeight(currentWeight);
 
-        // Define the base case
-        // Do something to reach the target. Call the fixDietandExercise method
-        // Do the recursive call. Call the loseWeight method
+        // Define the base case by using an if condition. The target weight is 150 lbs
+        // Do something to reach the target. Call the fixDietandExercise() method
+        // Do the recursive call. Call the loseWeight() method
       
         // if the target weight has been reached, print the code below.
         // System.out.println("I have reached my target weight!");
