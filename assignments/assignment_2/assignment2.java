@@ -42,7 +42,7 @@ public class App {
     static int fixDietandExercise(int weight) {
 
         System.out.println("Fixing Diet and Exercise!");
-        System.out.println("Enter weight lost in lbs: ");
+        System.out.print("Enter weight lost in lbs: ");
         int weightlost = scan.nextInt();
 
         int currentWeight = weight - weightlost;
