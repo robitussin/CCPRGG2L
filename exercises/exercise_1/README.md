@@ -1,9 +1,9 @@
-Please download the exercise1.java file 💡 <img src="https://cultofthepartyparrot.com/parrots/hd/laptop_parrot.gif" width="30" height="30"/>
+Please download the assignment2.java file 💡 <img src="https://cultofthepartyparrot.com/parrots/hd/laptop_parrot.gif" width="30" height="30"/>
 
-The program is incomplete. It needs the correct regex pattern to make it work! You need to provide the regex pattern based on the rules given for each number🔎
+The program is incomplete. It needs a base case, a function call that will enable you to reach your target weight, and the recursive call. 
 
 You can do it! <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50" /> <img src="https://cultofthepartyparrot.com/parrots/dabparrot.gif" width="30" height="30"/>
 
 <p align="center">
-  <img height="400" alt="Unicorn" src="https://c.tenor.com/GN73MKBawZYAAAAi/busy-cute.gif" />
+  <img height="400" alt="Unicorn" src="https://media.giphy.com/media/3ohs4BSacFKI7A717y/giphy.gif" />
 </p>
