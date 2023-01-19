@@ -7,7 +7,7 @@ public class App {
 
     public static void main(String[] args) throws Exception {
 
-        System.out.print("Enter current weight in lbs:");
+        System.out.print("Enter current weight in lbs: ");
         int weight = scan.nextInt();
 
         if (weight > 150) {
@@ -42,7 +42,7 @@ public class App {
     static int fixDietandExercise(int weight) {
 
         System.out.println("Fixing Diet and Exercise!");
-        System.out.println("Enter weight lost in lbs!");
+        System.out.println("Enter weight lost in lbs: ");
         int weightlost = scan.nextInt();
 
         int currentWeight = weight - weightlost;
