@@ -10,8 +10,7 @@ class Country {
         this.name = name;
     }
 
-    public void setSportPersons(List<Fauna> fauna) // To assign sportspeople
-    {
+    public void setlistofFauna(List<Fauna> fauna) {
         this.fauna = fauna;
     }
 

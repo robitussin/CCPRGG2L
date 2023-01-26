@@ -18,11 +18,10 @@ class Main {
         listOfFauna.add(Tarsier);
 
         // now add this list to Country Class
-        Philippines.setSportPersons(listOfFauna);
+        Philippines.setlistofFauna(listOfFauna);
 
-        // Outputting the Has-a association between Country and Fauna
-        System.out.println(
-                "The fauna found from the " + Philippines.getName() + " are " + Philippines.getSportPersons());
+        System.out
+                .println("The fauna found from the " + Philippines.getName() + " are " + Philippines.getSportPersons());
 
     }
 }
