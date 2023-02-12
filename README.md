@@ -14,3 +14,7 @@ https://www.notion.so/CCPRGG2L-b05c7e26ee29424eb468884af3cf51b8
 | week_5   | Recursion |
 | week_6   | Classes and Objects, Methods and Composition  |
 | week_7-8   | Encapsulation, Inheritance and Polymorphism  |
+| week_9   | Encapsulation, Inheritance and Polymorphism  |
+| week_10   | Introduction to Swing Package  |
+| week_11   | Event-Driven Programming  |
+| week_12   | Runnable Interface Synchronization  |
