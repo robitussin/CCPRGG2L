@@ -22,7 +22,6 @@ public class ColorMenu extends JFrame {
     ColorMenu() {
 
         super("Snake Game");
-        setLayout(new FlowLayout());
 
         // JPane
         JPanel panel1 = new JPanel();
@@ -54,8 +53,8 @@ public class ColorMenu extends JFrame {
 
         this.setResizable(false);
         this.setVisible(true);
+        this.setSize(200, 150);
         this.setLocationRelativeTo(null);
-        this.setSize(300, 300);
     }
 
     // Color Handler Class
