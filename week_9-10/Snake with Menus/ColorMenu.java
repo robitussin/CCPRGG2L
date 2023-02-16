@@ -29,7 +29,7 @@ public class ColorMenu extends JFrame {
         JPanel panel2 = new JPanel();
 
         // JLabel
-        JLabel label = new JLabel("CHOOSE DIFFICULTY");
+        JLabel label = new JLabel("CHOOSE SNAKE COLOR");
 
         // JList
         colorList = new JList(colorNames);
