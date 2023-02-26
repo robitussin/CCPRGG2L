@@ -8,10 +8,9 @@ public class App {
 
         mainMenu.setDefaultCloseOperation(mainMenu.EXIT_ON_CLOSE);
 
-        mainMenu.setSize(300, 300);
+        mainMenu.setSize(750, 750);
         mainMenu.setVisible(true);
         mainMenu.setResizable(false);
         mainMenu.setLocationRelativeTo(null);
-
     }
 }

@@ -1,3 +1,4 @@
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -28,16 +29,28 @@ public class MainMenu extends JFrame {
         JPanel panel1 = new JPanel();
         JPanel panel2 = new JPanel();
 
+        // Image
+        ImageIcon image = new ImageIcon("snake.jpg");
+
         // JLabel
-        JLabel label = new JLabel("WELCOME TO SNAKE GAME");
+        JLabel label = new JLabel();
+        label.setIcon(image);
 
         // JButton
-        JButton startButton = new JButton("START GAME");
+        JButton startButton = new JButton();
+        startButton.setText("START GAME");
+        startButton.setFont(new Font("CONSOLAS", Font.BOLD, 22));
 
         // Add event
         EventHandler handler = new EventHandler();
-
         startButton.addActionListener(handler);
+
+        // Set background color of panel1
+        panel1.setBackground(Color.GRAY);
+        // Set background color of panel2
+        panel2.setBackground(Color.GRAY);
+        // Set background color of Frame
+        this.getContentPane().setBackground(Color.GRAY);
 
         // Add JButton components to frame
         panel1.add(label);
