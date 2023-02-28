@@ -64,8 +64,8 @@ public class ColorMenu extends JFrame {
             GamePanel panel = new GamePanel();
             panel.snakeColor = colors[colorList.getSelectedIndex()];
 
-            // Opens game window
-            new GameFrame();
+            // Opens PlayerName window
+            new PlayerName();
 
             // Closes color menu window
             dispose();

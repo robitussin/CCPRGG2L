@@ -16,6 +16,9 @@ public class GamePanel extends JPanel implements ActionListener {
     // Snake Color
     static Color snakeColor;
 
+    // Player name
+    static String playerName;
+
     int bodyParts = 6;
     int applesEaten;
     int appleX;
@@ -68,7 +71,13 @@ public class GamePanel extends JPanel implements ActionListener {
             g.setColor(Color.RED);
             g.setFont(new Font("Ink Free", Font.BOLD, 40));
             FontMetrics metrics = getFontMetrics(g.getFont());
-            g.drawString("Score: " + applesEaten, (SCREEN_WIDTH - metrics.stringWidth("Score: " + applesEaten)) / 2,
+
+            g.drawString("Player: " + playerName, 0
+                    / 2,
+                    g.getFont().getSize());
+
+            g.drawString("Score: " + applesEaten, (SCREEN_WIDTH -
+                    metrics.stringWidth("Score: " + applesEaten)) / 2,
                     g.getFont().getSize());
         } else {
             gameOver(g);
