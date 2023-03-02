@@ -7,10 +7,12 @@ public class App {
         MainMenu mainMenu = new MainMenu();
 
         mainMenu.setDefaultCloseOperation(mainMenu.EXIT_ON_CLOSE);
-
-        mainMenu.setSize(750, 750);
+        mainMenu.setSize(500, 500);
         mainMenu.setVisible(true);
-        mainMenu.setResizable(false);
         mainMenu.setLocationRelativeTo(null);
+        mainMenu.setResizable(false);
+        // background color of frame
+        mainMenu.getContentPane().setBackground(new Color(200, 20, 100));
+
     }
 }
