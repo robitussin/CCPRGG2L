@@ -31,9 +31,11 @@ public class GamePanel extends JPanel implements ActionListener {
     boolean running = false;
     Timer timer;
     Random random;
+    private Image apple;
 
     GamePanel() {
         random = new Random();
+        apple = new ImageIcon("apple.png").getImage();
         this.setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
         this.setBackground(Color.black);
         this.setFocusable(true);
@@ -55,29 +57,32 @@ public class GamePanel extends JPanel implements ActionListener {
 
     public void draw(Graphics g) {
 
+        Graphics2D g2d = (Graphics2D) g;
+
         if (running) {
-            g.setColor(Color.red);
-            g.fillOval(appleX, appleY, UNIT_SIZE, UNIT_SIZE);
+            g2d.setColor(Color.red);
+            // g2d.fillOval(appleX, appleY, UNIT_SIZE, UNIT_SIZE);
+            drawApple(g2d, appleX, appleY);
 
             for (int i = 0; i < bodyParts; i++) {
                 if (i == 0) {
-                    g.setColor(snakeColor);
+                    g2d.setColor(snakeColor);
                     g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                 } else {
-                    g.setColor(snakeColor);
-                    g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+                    g2d.setColor(snakeColor);
+                    g2d.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                 }
             }
-            g.setColor(Color.red);
-            g.setFont(new Font("Ink Free", Font.BOLD, 40));
-            FontMetrics metrics = getFontMetrics(g.getFont());
+            g2d.setColor(Color.red);
+            g2d.setFont(new Font("Ink Free", Font.BOLD, 40));
+            FontMetrics metrics = getFontMetrics(g2d.getFont());
 
-            g.drawString("Player: " + playerName, 0, g.getFont().getSize());
+            g2d.drawString("Player: " + playerName, 0, g2d.getFont().getSize());
 
-            g.drawString("Score: " + applesEaten, (SCREEN_WIDTH - metrics.stringWidth("Score: " + applesEaten)) / 2,
-                    g.getFont().getSize());
+            g2d.drawString("Score: " + applesEaten, (SCREEN_WIDTH - metrics.stringWidth("Score: " + applesEaten)) / 2,
+                    g2d.getFont().getSize());
         } else {
-            gameOver(g);
+            gameOver(g2d);
         }
 
     }
@@ -85,6 +90,11 @@ public class GamePanel extends JPanel implements ActionListener {
     public void newApple() {
         appleX = random.nextInt((int) (SCREEN_WIDTH / UNIT_SIZE)) * UNIT_SIZE;
         appleY = random.nextInt((int) (SCREEN_HEIGHT / UNIT_SIZE)) * UNIT_SIZE;
+    }
+
+    private void drawApple(Graphics2D g2d, int x, int y) {
+
+        g2d.drawImage(apple, x, y, this);
     }
 
     public void move() {
@@ -147,7 +157,7 @@ public class GamePanel extends JPanel implements ActionListener {
         }
     }
 
-    public void gameOver(Graphics g) {
+    public void gameOver(Graphics2D g) {
         // Score
         g.setColor(Color.red);
         g.setFont(new Font("Ink Free", Font.BOLD, 40));
